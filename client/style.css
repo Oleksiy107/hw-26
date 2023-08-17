@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.text-btn {
+  color: rgba(255, 255, 255, 0.515);
+}
+.container {
+  height: 100vh;
+  gap: 20vw;
+  background-color: #240b3b;
+  display: flex;
+  align-items: flex-start;
+}
+.btnClickWheel {
+  background-color: hsl(265, 69%, 52%);
+  border: none;
+  color: white;
+  padding: 1vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1vw;
+  cursor: pointer;
+  border-radius: 0.5vw;
+}
+.inner-wheel {
+  height: 10vw;
+  gap: 2vw;
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #240b3b;
+}
+@keyframes up-down {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(4vw);
+  }
+}
+.style-photo{
+  width: 40vw;
+}
+.box-wheel {
+  text-align: center;
+  position: relative;
+  animation: up-down 5s infinite;
+}
+
+.showAnswer {
+  color: wheat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
